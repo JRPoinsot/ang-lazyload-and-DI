@@ -1,0 +1,79 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 98vh;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-style: solid;
+    width: 15vw;
+
+  }
+
+  .menu > * {
+    padding-left: 10px;
+    cursor: pointer;
+  }
+
+  .menu > h3 {
+    padding-left: 20px;
+  }
+
+  .router {
+    flex: 1 0 auto;
+    margin-left: 50px;
+    border-color: lightcoral;
+    border-style: solid;
+  }
+
+</style>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<div class="main">
+  <div class="menu">
+    <h2 (click)="router.navigateByUrl('/home')">Home</h2>
+    <h2 (click)="router.navigateByUrl('/user')">User</h2>
+    <h3 (click)="router.navigateByUrl('/user/infos')">User Info</h3>
+    <h3 (click)="router.navigateByUrl('/user/contact')">User Contact</h3>
+    <h3 (click)="router.navigateByUrl('/user/preferences')">User Preferences</h3>
+    <h2 (click)="router.navigateByUrl('/admin')">Admin</h2>
+    <h3 (click)="router.navigateByUrl('/admin/dashboard')">Admin Dashboard</h3>
+    <h3 (click)="router.navigateByUrl('/admin/rights')">Admin Rights</h3>
+  </div>
+  <div class="router">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+
