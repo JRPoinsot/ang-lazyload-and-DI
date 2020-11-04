@@ -1,1 +1,4 @@
-<p>home works!</p>
+<div style="display: flex;align-items: center;">
+  <p>home service count: {{ service.count$ | async }}</p>
+  <button mat-button style="margin-left: 10px" color="primary" (click)="increment()">Increment</button>
+</div>
