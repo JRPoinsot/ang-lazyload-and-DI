@@ -11,6 +11,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     AdminRoutingModule
-  ]
+  ],
+  providers: [DumbService]
 })
 export class AdminModule { }

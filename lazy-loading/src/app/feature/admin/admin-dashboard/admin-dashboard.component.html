@@ -1,4 +1,4 @@
 <div style="display: flex;align-items: center;">
-  <p>admin-dashboard service count: {{ service.count$ | async }}</p>
+  <p>admin-dashboard service {{ service.serviceid }} count: {{ service.count$ | async }}</p>
   <button mat-raised-button style="margin-left: 10px" color="primary" (click)="increment()">Increment</button>
 </div>

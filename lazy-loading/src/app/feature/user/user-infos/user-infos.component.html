@@ -1,5 +1,5 @@
 <div style="display: flex;align-items: center;">
-  <p>user-infos service count: {{ service.count$ | async }}</p>
+  <p>user-infos service {{ service.serviceid }} count: {{ service.count$ | async }}</p>
   <button mat-button style="margin-left: 10px" color="primary" (click)="increment()">Increment</button>
 </div>
 <app-user-infos-details></app-user-infos-details>
